@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Student Registration Form </title>
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: darkblue;
+}
+h1{
+    color: white;
+}
+button {
+       background-color: #4CAF50;
+       width: 100%;
+        color: white;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
+ form {
+        border: 3px solid #f1f1f1;
+    }
+ input[type=text], input[type=tel], input[type=password], input[type=email] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+#course{
+    margin: 8px 0;
+}
+textarea{
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid green;
+    box-sizing: border-box;
+}
+ button:hover {
+        opacity: 0.7;
+    }
+  .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+    }
+
+
+ .container {
+        padding: 25px;
+        background-color: lightblue;
+    }
+</style>
+</head>
+<body>
+    <center> <h1> Student Registration Form </h1> </center>
+    <form>
+        <div class="container">
+
+            <!-- First Name -->
+            <label>First Name : </label>
+            <input type="text" placeholder="First Name" name="First Name" required>
+
+            <!-- Middle Name -->
+            <label>Middle Name : </label>
+            <input type="text" placeholder="Middle Name" name="Middle Name">
+
+            <!-- Last Name -->
+            <label>Last Name : </label>
+            <input type="text" placeholder="Last Name" name="Last Name">
+
+            <!-- Course -->
+            <label>Course :</label>
+            <select name="Course" id="course">
+                <option value="Course">Course</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="SQL">SQL</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Java">Java</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="R">R</option>
+                <option value="COBOL">COBOL</option>
+                <option value="Matlab">Matlab</option>
+            </select> <br />
+
+            <!-- Gender -->
+            <label>Gender :</label> <br />
+            <input type="radio" name="Gender"> Male
+            <input type="radio" name="Gender"> Female
+            <input type="radio" name="Gender"> Other <br />
+
+            <!-- Phone -->
+            <label>Phone :</label>
+            <input type="text" name="country code" placeholder="Country Code" value="+91" size="2">
+            <input type="tel" name="Phone" placeholder="Phone no." size="10" required>
+
+            <!-- Address -->
+            <label>Current Address :</label>
+            <textarea name="Address" id="address" cols="30" rows="7" placeholder="Current Address"></textarea>
+
+            <!-- Email -->
+            <label>Email :</label>
+            <input type="email" name="Email" placeholder="Enter Email" id="email" required>
+
+            <!-- Password -->
+            <label>Password :</label>
+            <input type="password" name="Password" placeholder="Enter Password" id="password" required>
+
+            <!-- Re-type Password -->
+            <label>Re-type Password :</label>
+            <input type="password" name="Re-type Password" placeholder="Re-type Password" id="re-type-password" required>
+
+            <button type="submit">Register</button>
+
+            <!-- <input type="checkbox" checked="checked"> Remember me
+            <button type="button" class="cancelbtn"> Cancel</button>
+            Forgot <a href="#"> password? </a> -->
+        </div>
+    </form>
+</body>
+</html>
